@@ -34,7 +34,6 @@ public class Validate {
     public static double getDistanceToBeacon(Beacon beacon){
         double raiseTo = (beacon.getMeasuredPower()-beacon.getRssi())/(10*2);
         double result =  Math.pow(10,raiseTo);
-        Log.d("Pushkar","distance for this beacon is: "+result+" meter");
         return result;
     }
 }
