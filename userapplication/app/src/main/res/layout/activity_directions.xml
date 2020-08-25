@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/parent_layout_margin"
+        tools:context=".view.DirectionsActivity">
+
+        <TextView
+            android:id="@+id/directionsTextStub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textStyle="bold"
+            android:text="Directions to your package(s)"/>
+
+        <TextView
+            android:id="@+id/directionsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="take 10 steps, then right"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_marginTop="8dp"
+            android:lineSpacingMultiplier="1.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/directionsTextStub"
+            app:layout_constraintBottom_toTopOf="@id/foundStationBtn"/>
+
+        <Button
+            android:id="@+id/foundStationBtn"
+            android:layout_width="match_parent"
+            style="@style/CustomButton"
+            android:layout_height="wrap_content"
+            android:text="Found the station"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

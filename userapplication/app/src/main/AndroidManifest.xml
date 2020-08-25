@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pushkar.packagecustomer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <application
+        android:name=".service.MyBeaconApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tracking_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tracking_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.DirectionsActivity"></activity>
+
+        <service
+            android:name=".service.MyNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.RegisterUserActivity" />
+        <activity
+            android:name=".view.home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.LoginUserActivity" />
+    </application>
+
+</manifest>

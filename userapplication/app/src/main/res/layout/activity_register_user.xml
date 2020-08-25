@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".view.RegisterUserActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/parent_layout_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:layout_margin="@dimen/vertical_spacing_between_views"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerUserNameTIL">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_hint_et_txt"
+                    android:id="@+id/registerUserNameET"
+                    android:layout_margin="@dimen/vertical_spacing_between_views"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerUserEmailTIL">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_et_hint"
+                    android:id="@+id/registerUserEmailET"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="@dimen/vertical_spacing_between_views"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerUserPasswordTIL">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_hint_et_txt"
+                    android:inputType="textPassword"
+                    android:id="@+id/registerUserPasswordET"
+                    android:layout_margin="@dimen/vertical_spacing_between_views"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerUserConfirmPasswordTIL">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/confirm_password_et_txt"
+                    android:id="@+id/registerUserConfirmPasswordET"
+                    android:layout_margin="@dimen/vertical_spacing_between_views"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_btn_txt"
+                style="@style/CustomButton"
+                android:layout_marginBottom="@dimen/parent_layout_margin"
+                android:onClick="registerClicked"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

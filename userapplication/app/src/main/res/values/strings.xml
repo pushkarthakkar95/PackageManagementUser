@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Package Tracker</string>
+    <string name="login_btn_str">LOGIN</string>
+    <string name="sign_up_str">SIGN UP</string>
+    <string name="password_et_hint">Password</string>
+    <string name="email_et_hint">Email</string>
+    <string name="incorrect_registration_input_toast_message">Please enter valid details</string>
+    <string name="register_btn_txt">REGISTER</string>
+    <string name="confirm_password_et_txt">Confirm Password</string>
+    <string name="password_hint_et_txt">Password (Minimum 5 Characters)</string>
+    <string name="name_hint_et_txt">Name</string>
+</resources>

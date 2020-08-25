@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parent_layout_margin">16dp</dimen>
+    <dimen name="vertical_spacing_between_views">4dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+</resources>
